@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.example.paweljezierski.udacitylearning.MainActivity"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/Darkgray"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/nameTextView"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/nameWeightLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/weightTextView1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:minWidth="60dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:hint="click here and write your name"
+            android:textColor="@color/Darkgray"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName"
+            android:background="@android:color/transparent"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:cursorVisible="false"
+            android:id="@+id/nameEditText"
+            android:imeOptions="actionDone"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/weightTextView2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="type"
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/Darkgray"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/typeTextView" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/typeLayout">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:text="Latte"
+            android:textSize="16sp"
+            android:id="@+id/coffeeTypeButton1"
+            android:textColor="@color/Darkgray"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:text="Americano"
+            android:textSize="16sp"
+            android:id="@+id/coffeeTypeButton2"
+            android:textColor="@color/Darkgray"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:text="Cappucino"
+            android:textSize="16sp"
+            android:id="@+id/coffeeTypeButton3"
+            android:textColor="@color/Darkgray"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="quantity"
+       android:textSize="22sp"
+       android:textAllCaps="true"
+       android:layout_weight="0"
+       android:layout_gravity="center_horizontal"
+       android:textColor="@color/Darkgray"
+       android:layout_marginTop="16dp"
+       android:layout_marginBottom="8dp"
+       android:id="@+id/quantityTextView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/quantityLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MinusButton"
+            android:text="-"
+            android:textSize="24sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/Darkgray" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/Darkgray"
+            android:textSize="16sp"
+            android:id="@+id/amountTextView"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PlusButton"
+            android:text="+"
+            android:textSize="24sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/Darkgray" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:textSize="22sp"
+        android:textAllCaps="true"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/Darkgray"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/price2TextView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/priceLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textColor="@color/Darkgray"
+            android:textSize="16sp"
+            android:id="@+id/dollarSignTextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "3"
+            android:textColor="@color/Darkgray"
+            android:textSize="16sp"
+            android:id="@+id/priceTextView" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/orderLayout">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Darkgray"
+            android:layout_above="@+id/OrderButton"
+            android:layout_alignParentStart="true"
+            android:id="@+id/borderView" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="order"
+            android:textAllCaps="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/Darkgray"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/OrderButton"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
